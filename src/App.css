@@ -113,3 +113,25 @@
     transform: translateY(0);
   }
 }
+.bio-contact {
+  display: flex;
+}
+.github {
+  width: 20px;
+  height: 20px;
+  color: black;
+  margin: 10px;
+}
+.linkedin {
+  width: 20px;
+  height: 20px;
+  color: #0c66c3;
+  margin: 10px;
+}
+
+.email {
+  width: 20px;
+  height: 20px;
+  color: #0c66c3;
+  margin: 10px;
+}

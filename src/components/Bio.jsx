@@ -1,7 +1,8 @@
+import Contact from "./Contact";
 const Bio = () => {
   return (
     <section className="bio">
-      <img src="./images/my-pict.JPG" alt="mypict" className="bio-photo" />
+      <Contact />
       <aside className="bio-block"></aside>
       <aside className="bio-description">
         <h1 className="title">Hello, My name is Fransiskus Aldo.</h1>
