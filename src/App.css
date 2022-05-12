@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+:root {
+  --bg-color: hsl(49, 37%, 94%);
+  --type-speed: 4.5s;
+  --border-color: rgb(217, 213, 213);
+  --p-color: hsl(0 0% 0% / 0.7);
+}
 
 .App {
   min-height: 200vh;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: hsl(49, 37%, 94%);
+  background-color: var(--bg-color);
 }
 
 .background {
@@ -21,8 +28,8 @@
   place-content: center;
   text-align: center;
   justify-content: flex-start;
-  border-top: 1px dashed rgb(217, 213, 213);
-  border-bottom: 1px dashed rgb(217, 213, 213);
+  border-top: 1px dashed var(--border-color);
+  border-bottom: 1px dashed var(--border-color);
 }
 
 .bio-photo {
@@ -40,8 +47,69 @@
 .bio-description {
   margin: 20px auto;
 }
-.bio-description h1 {
+.title {
   font-size: clamp(1.5rem, 3vw + 1rem, 1.5rem);
   font-family: "Source Code Pro", monospace;
   position: relative;
+  width: max-content;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.title::before {
+  background-color: var(--bg-color);
+  animation: typewriter var(--type-speed) steps(35) 1s forwards;
+  animation-delay: 1s;
+}
+
+.title::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--type-speed) steps(35) 1s forwards,
+    blinking 750ms steps(35) 1s infinite;
+}
+
+.p-developer {
+  color: var(--p-color);
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeIn 2s ease calc(var(--type-speed) + 2s) forwards;
+}
+
+.p-welcome {
+  color: var(--p-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeIn 2s ease calc(var(--type-speed) + 4s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blinking {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
