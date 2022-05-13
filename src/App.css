@@ -6,11 +6,12 @@
   --type-speed: 4.5s;
   --border-color: rgb(217, 213, 213);
   --p-color: hsl(0 0% 0% / 0.7);
+  --linkedin-color: #0c66c3;
 }
 
 .App {
   min-height: 200vh;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   background-color: var(--bg-color);
 }
 
@@ -113,25 +114,59 @@
     transform: translateY(0);
   }
 }
+
+.bio-container {
+  margin-bottom: 10px;
+}
 .bio-contact {
   display: flex;
+  justify-content: center;
 }
+
 .github {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   color: black;
   margin: 10px;
 }
+.github:hover {
+  color: var(--linkedin-color);
+}
 .linkedin {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   color: #0c66c3;
   margin: 10px;
 }
+.linkedin:hover {
+  background-color: var(--linkedin-color);
+  color: white;
+}
 
 .email {
-  width: 20px;
-  height: 20px;
-  color: #0c66c3;
+  width: 25px;
+  height: 25px;
+  background-color: var(--linkedin-color);
   margin: 10px;
+  color: white;
+  border-radius: 4px;
+}
+.email:hover {
+  background-color: white;
+  color: var(--linkedin-color);
+}
+
+.download-resume {
+  text-decoration: none;
+  background-color: var(--linkedin-color);
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+}
+
+.download-resume:hover {
+  color: black;
+  background-color: #3788da;
 }

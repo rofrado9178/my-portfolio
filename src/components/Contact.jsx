@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <article>
+    <article className="bio-container">
       <img src="./images/my-pict.JPG" alt="mypict" className="bio-photo" />
       <aside className="bio-contact">
         <a
@@ -21,10 +21,17 @@ const Contact = () => {
           <FaLinkedin className="linkedin"></FaLinkedin>
         </a>
 
-        <a href="https://aldzaidea@gmail.com">
+        <a href="mailto:aldzaidea@gmail.com">
           <MdEmail className="email"></MdEmail>
         </a>
       </aside>
+      <a
+        href="./Fransiskus_Aldo_resume.pdf"
+        download
+        className="download-resume"
+      >
+        Download My Resume
+      </a>
     </article>
   );
 };
