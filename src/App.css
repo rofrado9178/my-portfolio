@@ -80,8 +80,8 @@
 
 .p-developer {
   color: var(--p-color);
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 600;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeIn 2s ease calc(var(--type-speed) + 2s) forwards;
@@ -90,7 +90,7 @@
 .p-welcome {
   color: var(--p-color);
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeIn 2s ease calc(var(--type-speed) + 4s) forwards;

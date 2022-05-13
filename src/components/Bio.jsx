@@ -6,8 +6,8 @@ const Bio = () => {
       <aside className="bio-block"></aside>
       <aside className="bio-description">
         <h1 className="title">Hello, My name is Fransiskus Aldo</h1>
-        <p className="p-developer">I am a web developer</p>
-        <p className="p-welcome">Welcome to my website</p>
+        <h1 className="p-developer">I am a web developer</h1>
+        <h1 className="p-welcome">Welcome to my website</h1>
       </aside>
     </section>
   );
