@@ -128,19 +128,23 @@
   height: 25px;
   color: black;
   margin: 10px;
+  transition: all 0.2s ease-in-out;
 }
 .github:hover {
   color: var(--linkedin-color);
+  transform: scale(1.2);
 }
 .linkedin {
   width: 25px;
   height: 25px;
   color: #0c66c3;
   margin: 10px;
+  transition: all 1s ease-in-out;
 }
 .linkedin:hover {
   background-color: var(--linkedin-color);
   color: white;
+  transform: scale(1.2);
 }
 
 .email {
@@ -150,10 +154,12 @@
   margin: 10px;
   color: white;
   border-radius: 4px;
+  transition: all 1s ease-in-out;
 }
 .email:hover {
   background-color: white;
   color: var(--linkedin-color);
+  transform: scale(1.2);
 }
 
 .download-resume {
@@ -164,6 +170,7 @@
   border-radius: 4px;
   color: white;
   font-weight: 600;
+  transition: all 1s ease-in-out;
 }
 
 .download-resume:hover {
