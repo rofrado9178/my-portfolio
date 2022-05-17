@@ -2,10 +2,9 @@ import CarouselContainer from "./CarouselContainer";
 
 const CardList = ({ data }) => {
   const carouselItems = data.map((project) => {
-    console.log("this is project", project);
     return <CarouselContainer {...project} key={project.id} />;
   });
-  return <h1>{carouselItems}</h1>;
+  return <article className="cards">{carouselItems}</article>;
 };
 
 export default CardList;
