@@ -1,15 +1,15 @@
 import CarouselContainer from "./components/CarouselContainer";
 import "./App.css";
 import Bio from "./components/Bio";
+import CardList from "./components/CardList";
 import data from "./data";
 
 function App() {
-  const projects = data;
   return (
     <main className="App">
       <section className="background"></section>
       <Bio />
-      <CarouselContainer />
+      <CardList data={data} />
     </main>
   );
 }
