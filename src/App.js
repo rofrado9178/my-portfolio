@@ -1,3 +1,4 @@
+import CarouselContainer from "./components/CarouselContainer";
 import "./App.css";
 import Bio from "./components/Bio";
 import data from "./data";
@@ -8,7 +9,7 @@ function App() {
     <main className="App">
       <section className="background"></section>
       <Bio />
-      <img src={projects[0].image[0]} />
+      <CarouselContainer />
     </main>
   );
 }
