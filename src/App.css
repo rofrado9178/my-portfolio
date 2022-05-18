@@ -2,11 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
 
 :root {
-  --bg-color: hsl(49, 37%, 94%);
+  /* --bg-color: hsl(49, 37%, 94%); */
   --type-speed: 4.5s;
   --border-color: rgb(217, 213, 213);
   --p-color: hsl(0 0% 0% / 0.7);
   --linkedin-color: #0c66c3;
+  --bg-color: #f2f2f2;
 }
 body {
   background-color: var(--bg-color);
@@ -19,7 +20,7 @@ body {
 .background {
   background-image: url("/public/images/pexels-negative-space-169573.jpg");
   width: 100%;
-  height: 400px;
+  height: 340px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,7 +48,7 @@ body {
 }
 
 .bio-description {
-  margin: 20px auto;
+  margin: auto auto;
 }
 .title {
   font-size: clamp(1.5rem, 3vw + 1rem, 1.5rem);
@@ -82,7 +83,6 @@ body {
 .p-developer {
   color: var(--p-color);
   font-size: 1.7rem;
-  font-weight: 600;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeIn 2s ease calc(var(--type-speed) + 2s) forwards;
@@ -91,7 +91,6 @@ body {
 .p-welcome {
   color: var(--p-color);
   font-size: 1.5rem;
-  font-weight: 600;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeIn 2s ease calc(var(--type-speed) + 4s) forwards;
