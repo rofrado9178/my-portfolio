@@ -12,7 +12,7 @@ body {
   background-color: var(--bg-color);
 }
 .App {
-  min-height: min-content;
+  min-height: 100vh;
   font-family: "Source Code Pro", sans-serif;
 }
 
@@ -198,10 +198,53 @@ body {
 }
 .cards {
   display: grid;
-  height: 300px;
+  overflow-y: scroll;
+  margin: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: azure;
+  border-radius: 20px;
+}
+
+.project-link {
+  margin: 0px auto;
+}
+@media only screen and (max-width: 499px) {
+  .bio {
+    flex-direction: column;
+  }
+  .title {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 0.75rem);
+    font-weight: 500;
+    width: auto;
+  }
+  .p-developer {
+    font-size: 0.9rem;
+  }
+  .p-welcome {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 899px) {
+  .bio {
+    flex-direction: column;
+  }
+  .title {
+    font-size: clamp(1.5rem, 2vw + 0.9rem, 1.25rem);
+    font-weight: 500;
+  }
+  .p-developer {
+    font-size: 1.2rem;
+  }
+  .p-welcome {
+    font-size: 1.2rem;
+  }
+
   .cards {
     grid-template-columns: 1fr 1fr;
     height: 300px;
@@ -215,7 +258,7 @@ body {
 @media only screen and (min-width: 900px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
-    height: 200px;
+    height: 300px;
   }
   .carousel-img {
     height: 200px;
