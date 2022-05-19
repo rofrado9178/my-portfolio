@@ -6,7 +6,7 @@ const CarouselContainer = ({ image, description, github, name }) => {
       <Carousel.Item interval={5000}>
         <div className="carousel-img">
           <img
-            className="d-block w-100 h-100 img"
+            className="d-block w-100 h-150 img"
             src={img}
             alt="First slide"
           />

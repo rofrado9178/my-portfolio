@@ -17,7 +17,7 @@ const CardList = ({ data }) => {
             rel="noreferrer"
             className={project.live ? "live-site" : "disabled-site"}
           >
-            Go to website
+            Live site
           </a>
         </aside>
         <aside>
@@ -26,7 +26,7 @@ const CardList = ({ data }) => {
       </article>
     );
   });
-  return <article className="cards">{carouselItems}</article>;
+  return <section className="cards">{carouselItems}</section>;
 };
 
 export default CardList;
