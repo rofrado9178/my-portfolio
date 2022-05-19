@@ -174,8 +174,9 @@ body {
 }
 
 .download-resume:hover {
-  color: black;
-  background-color: #3788da;
+  color: var(--linkedin-color);
+  background-color: white;
+  border: 1px solid var(--linkedin-color);
 }
 
 .container-carousel {
@@ -213,6 +214,13 @@ body {
   margin: 20px;
   background-color: azure;
   border-radius: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.cardContainer:hover {
+  transform: scale(1.05);
+  background-color: rgb(202, 238, 238);
+  cursor: pointer;
 }
 
 .project-link {

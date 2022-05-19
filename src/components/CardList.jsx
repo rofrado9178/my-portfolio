@@ -18,7 +18,7 @@ const CardList = ({ data }) => {
       </article>
     );
   });
-  return <article className="cards">{carouselItems}\</article>;
+  return <article className="cards">{carouselItems}</article>;
 };
 
 export default CardList;
