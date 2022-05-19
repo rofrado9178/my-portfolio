@@ -194,11 +194,11 @@ body {
 .carousel-img {
   width: 95%;
   margin: 0px auto;
-  height: 100%;
+  height: 200px;
 }
 
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-prev {
   filter: invert(100%);
   width: 25px;
   border-radius: 4px;
@@ -206,7 +206,22 @@ body {
 .cards {
   display: grid;
   overflow-y: scroll;
-  margin-bottom: 20px;
+  margin: 0px 10px 20px;
+  height: 300px;
+}
+
+.cards::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.cards::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
 }
 
 .cardContainer {
@@ -234,6 +249,7 @@ body {
   padding: 0px;
   overflow-wrap: break-word;
   width: 90%;
+  font-size: 1.1rem;
 }
 
 .project-description {
@@ -256,6 +272,10 @@ body {
   .p-welcome {
     font-size: 0.9rem;
   }
+
+  .cards::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 779px) {
@@ -277,10 +297,6 @@ body {
     grid-template-columns: 1fr 1fr;
     height: 300px;
   }
-
-  .carousel-img {
-    height: 200px;
-  }
 }
 
 @media only screen and (min-width: 780px) {
@@ -288,11 +304,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     height: 300px;
   }
-  .carousel-img {
-    height: 200px;
-  }
+
   .project-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
