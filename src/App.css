@@ -36,7 +36,7 @@ body {
 }
 
 .bio-photo {
-  object-fit: cover;
+  object-fit: contain;
   width: 200px;
   height: 200px;
 }
@@ -171,12 +171,13 @@ body {
   color: white;
   font-weight: 600;
   transition: all 1s ease-in-out;
+  font-size: 13px;
 }
 
 .download-resume:hover {
   color: var(--linkedin-color);
   background-color: white;
-  border: 1px solid var(--linkedin-color);
+  border: 3px solid var(--linkedin-color);
 }
 
 .container-carousel {
@@ -214,7 +215,7 @@ body {
   margin: 20px;
   background-color: azure;
   border-radius: 20px;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .cardContainer:hover {
@@ -257,7 +258,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 899px) {
+@media only screen and (min-width: 400px) and (max-width: 779px) {
   .bio {
     flex-direction: column;
   }
@@ -282,7 +283,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 780px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     height: 300px;
