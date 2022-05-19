@@ -184,7 +184,9 @@ body {
   height: 200px;
 }
 .img {
-  object-fit: contain;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .carousel-img {
@@ -215,6 +217,20 @@ body {
 
 .project-link {
   margin: 0px auto;
+}
+
+.project-title {
+  text-align: center;
+  margin: 10px auto 0px;
+  padding: 0px;
+  overflow-wrap: break-word;
+  width: 90%;
+}
+
+.project-description {
+  font-size: 0.8rem;
+  width: 90%;
+  margin: 0px auto 20px;
 }
 @media only screen and (max-width: 499px) {
   .bio {
@@ -265,5 +281,9 @@ body {
   }
   .carousel-img {
     height: 200px;
+  }
+  .project-title {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
