@@ -8,6 +8,7 @@
   --p-color: hsl(0 0% 0% / 0.7);
   --linkedin-color: #0c66c3;
   --bg-color: #fcfcfc;
+  --ease-hover: all 1s ease-in-out;
 }
 body {
   background-color: var(--bg-color);
@@ -128,7 +129,7 @@ body {
   height: 25px;
   color: black;
   margin: 10px;
-  transition: all 0.2s ease-in-out;
+  transition: var(--ease-hover);
 }
 .github:hover {
   color: var(--linkedin-color);
@@ -139,7 +140,7 @@ body {
   height: 25px;
   color: #0c66c3;
   margin: 10px;
-  transition: all 1s ease-in-out;
+  transition: var(--ease-hover);
 }
 .linkedin:hover {
   background-color: var(--linkedin-color);
@@ -154,7 +155,7 @@ body {
   margin: 10px;
   color: white;
   border-radius: 4px;
-  transition: all 1s ease-in-out;
+  transition: var(--ease-hover);
 }
 .email:hover {
   background-color: white;
@@ -170,7 +171,7 @@ body {
   border-radius: 4px;
   color: white;
   font-weight: 600;
-  transition: all 1s ease-in-out;
+  transition: var(--ease-hover);
   font-size: 13px;
 }
 
@@ -257,6 +258,33 @@ body {
   width: 90%;
   margin: 0px auto 20px;
 }
+
+.live-site {
+  font-size: 12px;
+  padding: 6px;
+  background-color: var(--linkedin-color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: var(--ease-hover);
+}
+.live-site:hover {
+  background-color: white;
+  color: var(--linkedin-color);
+  border: 3px solid var(--linkedin-color);
+}
+
+.disabled-site {
+  font-size: 12px;
+  padding: 6px;
+  background-color: var(--linkedin-color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 499px) {
   .bio {
     flex-direction: column;

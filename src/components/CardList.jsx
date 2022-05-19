@@ -11,6 +11,14 @@ const CardList = ({ data }) => {
           <a href={project.github} target="_blank" rel="noreferrer">
             <FaGithub className="github"> </FaGithub>
           </a>
+          <a
+            href={project.live ? project.live : ""}
+            target="_blank"
+            rel="noreferrer"
+            className={project.live ? "live-site" : "disabled-site"}
+          >
+            Go to website
+          </a>
         </aside>
         <aside>
           <p className="project-description">{project.description}</p>

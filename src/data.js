@@ -35,6 +35,7 @@ const data = [
       "./images/scheduler3.png",
       "./images/scheduler4.png",
     ],
+    live: "https://62210d9a73078200088222b3--vigorous-easley-1bcf0a.netlify.app/",
   },
   {
     id: 4,
