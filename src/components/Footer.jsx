@@ -1,5 +1,3 @@
-import { FaCity, FaPhoneSquareAlt } from "react-icons/fa";
-
 const Footer = () => {
   return (
     <section className="footer">

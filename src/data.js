@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    name: "Haime",
+    name: "Haime - (on progress)",
     description:
       "Haime is an Online Store App. It's a full-stack application with React as a front-end and Python Django as a back-end REST API",
     github: "https://github.com/rofrado9178/online_store",
