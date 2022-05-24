@@ -277,7 +277,7 @@ body {
 .disabled-site {
   font-size: 12px;
   padding: 6px;
-  background-color: var(--linkedin-color);
+  background-color: gray;
   color: white;
   border-radius: 8px;
   text-decoration: none;
