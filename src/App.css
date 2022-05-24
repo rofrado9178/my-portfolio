@@ -14,7 +14,7 @@ body {
   background-color: var(--bg-color);
 }
 .App {
-  min-height: 200vh;
+  min-height: 100vh;
   font-family: "Source Code Pro", sans-serif;
 }
 
