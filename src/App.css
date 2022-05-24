@@ -285,17 +285,15 @@ body {
   opacity: 0.5;
 }
 .footer {
-  background-color: #bbbbbb;
   font-size: 15px;
   text-align: center;
   position: absolute;
   width: 100%;
-  height: 80px;
   font-size: 12px;
 }
 
 .footer-container {
-  margin-top: 30px;
+  margin: 20px 0px 10px;
 }
 .copyright {
   margin: 0;

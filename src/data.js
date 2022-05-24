@@ -5,7 +5,13 @@ const data = [
     description:
       "Haime is an Online Store App. It's a full-stack application with React as a front-end and Python Django as a back-end REST API",
     github: "https://github.com/rofrado9178/online_store",
-    image: [],
+    image: [
+      "./images/haime1.jpeg",
+      "./images/haime2.jpeg",
+      "./images/haime3.jpeg",
+      "./images/haime4.jpeg",
+      "./images/haime5.jpeg",
+    ],
   },
   {
     id: 2,
