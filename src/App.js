@@ -10,7 +10,7 @@ function App() {
       <section className="background"></section>
       <Bio />
       <CardList data={data} />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
